@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+html , body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: 'Black Ops One', cursive;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+}
+
+.main {
+    height: 100%;
+}
+
+.main__header {
+    height: 100%;
+}
+._container {
+    max-width: 1046px;
+    margin: 0px auto;
+    padding: 0 15px 0 15px;
+    box-sizing: content-box;
+  }
+
+.header__container {
+    display: grid;
+    grid-template-rows: 210px 20px;
+    height: 750px;
+    align-content: center;
+}
+p {
+    margin: 0;
+    justify-content: end;
+}
+
+.main-text {
+    /* margin-top: 250px; */
+    background: url(b2.jpg);
+    font-size: 200px;
+    color: transparent;
+    -webkit-background-clip: text;
+    animation: animated 7s infinite ease-in-out alternate
+    ;
+}
+
+@keyframes animated {
+    from{
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 100%;
+    }
+}
+
+
+
+/* -------------------------------------------------PROJECTS--------------------------------------------------------------------- */
+
+.main__projects {
+    /* background: url(b2.jpg) center ; */
+    background: linear-gradient(rgba(51, 51, 51, 0.7), rgba(0, 0, 0, 0.8)), url(b2.jpg) 0px 0px no-repeat;
+    background-size: cover;
+}
+
+
+
+
+.projects {
+}
+.projects__container {
+    display: grid;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    grid-gap: 75px;
+    
+}
+.item_right {
+    margin-left: auto;
+    margin-right: 0;
+}
+._container {
+}
+.projects__item {
+    width: 50%;
+    padding: 25px;
+    border: rgb(56, 36, 54) 2px solid;
+    background-color: rgba(53, 22, 49, 0.5);
+    /* border-radius: 10px; */
+}
+.projects__item h2 {
+    font-size: 16px;
+    font-weight: 400;
+}
+.projects__item p {
+    font-size: 14px;
+}
+.container_img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+
+}
+
+.container_img img {
+    width: 100%;
+}
+
+
+/*-------------------------------------------------FOOTER------------------------------------------------------ */
+
+.footer {
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer__container {
+    width: fit-content;
+    height: 100%;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-gap: 55px;
+   align-content: center;
+}
+a {
+    cursor: pointer;
+}
+
+.telegram:hover  {
+    fill: rgb(134, 194, 235) !important;
+}
+
+.git:hover  {
+    fill: rgb(219, 120, 113) !important;
+}
+
+.discord:hover  {
+    fill: rgb(110, 112, 240) !important;
+}
+
+/*-----------------------------------------------AUDIO------------------------------------ */
+.audio {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background-color: rgb(155, 102, 139);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.audio img {
+    /* text-align: center; */
+    width: 18px;
+}
+
+
+
+.content {
+    height: 100%;
+    background-color: rgb(197, 153, 153);
+}
+.circle {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    position: relative;
+    margin: auto;
+    border-radius: 50%;
+    top: 50px;
+    left: -500px;;
+    animation: white-circle;
+    animation-duration: 2s;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+}
+
+@keyframes white-circle {
+    0%{
+        left: -500px;
+    }
+    50%{
+        background-color: rgb(107, 116, 116);
+        border-radius: 0;
+    }
+    100% {
+        left: 500px;
+    }
+}
